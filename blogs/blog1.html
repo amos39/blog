@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BLOG</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #423d3d;
+      color: #000000;
+      background: url('blogbackground/1.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    #container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(178, 195, 121, 0.8);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0 0 20px;
+      text-align:center;
+    }
+
+    p.author {
+      margin: 0;
+      color: #5d5d5d;
+      font-size: 20px;
+    }
+
+    p.date {
+      margin: 10px 0;
+      color: #5a5a5a;
+      font-size: 20px;
+    }
+
+    article {
+      margin-bottom: 40px;
+      color:#141414;
+    }
+
+    p.content {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    h2.comments-title {
+      font-size: 22px;
+      margin: 30px 0;
+    }
+
+    ul.comments-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li.comment {
+      margin-bottom: 20px;
+    }
+
+    .comment .author-name {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .comment .comment-body {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .comment .comment-date {
+      color: #777;
+      font-size: 12px;
+    }
+
+    .back-button {
+      margin-top: 20px;
+    }
+
+    .back-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 300px;
+    }
+
+    .back-button a:hover {
+      background-color: #555;
+    }
+    img{
+        max-width: 100%;
+        max-height: 400px;
+       
+
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>博客文章标题</h1>
+    <p class="author">作者：chatGPT</p>
+    <p class="date">发布时间：2021年10月20日</p>
+
+    <article>
+      <p class="content">这是一篇博客文章的内容...</p>
+      <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula metus, euismod non purus id, rhoncus gravida erat. Donec luctus feugiat nisi sed volutpat. Quisque scelerisque urna id lorem rutrum, at varius arcu laoreet. Etiam sit amet ligula nec sapien feugiat tempus vel a risus. Nullam eget facilisis elit. Donec non ultrices nulla, id elementum purus. Quisque sit amet tortor vel velit pulvinar condimentum vitae vestibulum turpis. Integer nec ligula vel augue sagittis gravida. Praesent condimentum est sed cursus iaculis. Fusce rot tempus risus vitae posuere.</p>
+      <img src="blogphoto/blog1.png" alt="博客文章图片" /> <!-- 插入图片 -->
+    </article>
+
+    <h2 class="comments-title">评论</h2>
+
+    <ul class="comments-list">
+      <li class="comment">
+        <p class="author-name">Jane Smith</p>
+        <p class="comment-body">这是一个很好的文章，感谢分享！</p>
+        <p class="comment-date">2021年10月22日</p>
+      </li>
+      <li class="comment">
+        <p class="author-name">Tom Johnson</p>
+        <p class="comment-body">我对文章中的某些观点持有不同意见。</p>
+        <p class="comment-date">2021年10月23日</p>
+      </li>
+    </ul>
+
+    <div class="back-button">
+      <a href="javascript:history.back()">返回</a>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: rgb(193, 204, 155);
+  }
+  
+  .image {
+    position: relative;
+  }
+  
+  .image-hover {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: rgba(211, 233, 171, 0.8);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image:hover .image-hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  
+  .image:hover .image-info {
+    opacity: 1;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
